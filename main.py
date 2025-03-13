@@ -1,4 +1,7 @@
-from controlador import ControladorCuenta
+import tkinter as tk
+from vista import AplicacionBanco
 
 if __name__ == "__main__":
-    ControladorCuenta().ejecutar()
+    root = tk.Tk()
+    app = AplicacionBanco(root)
+    root.mainloop()
